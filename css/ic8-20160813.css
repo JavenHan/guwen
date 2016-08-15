@@ -1,0 +1,82 @@
+body.index{background: #edeeef; color: #464646; }
+/**首页业务样式**/
+
+.tabbox {
+    background: #ffffff;
+    margin-bottom: 1rem;
+}
+.tabad{
+    padding-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
+    height: 20rem;
+}
+
+.tabad ul li h3 {
+    float: left;
+    padding-left: 3.5rem;
+    padding-right: 3rem;
+    font-size: 3.5rem;
+    color: #464646;
+    line-height: 3.5rem;
+    margin-top: 3rem;
+    height: 4rem;
+}
+
+.tabad ul li span{
+    float: left;
+    padding-left: 3.5rem;
+    padding-right: 3rem;
+    font-size: 2.5rem;
+    color: #464646;
+    line-height: 3.5rem;
+    margin-top: 3rem;
+}
+
+.tabad ul li p{
+    float: left;
+    padding-left: 3.5rem;
+    padding-right: 3rem;
+    font-size: 2.5rem;
+    color: #464646;
+    line-height: 3.5rem;
+    margin-top: 3rem;
+}
+
+.tabad ul li a{
+    float: right;
+    padding-left: 3.5rem;
+    padding-right: 3rem;
+    font-size: 2.5rem;
+    color: #ffffff;
+    background-color: #464646;
+    line-height: 3.5rem;
+    margin-top: 3rem;
+    margin-right: 3.5rem;
+    border-radius: 15px;
+}
+
+.line{
+    width: 95%;
+    margin-left: auto;
+    margin-right:auto;
+    height: 1px;
+    background-color: #cccccc;
+}
+
+.floor{ margin-bottom: 1.5rem; background: #ffffff;}
+
+.floor-tit{display:block;height: 126px;border-bottom: 1px solid #b9b9b9;}
+
+.floor-tit h2{display:block;float: left;height: 72px; padding: 27px 46px;}
+
+.floor-tit a{
+    display:block;
+    float: right;
+    height: 72px;
+    color: #cccccc;
+    padding: 38px 46px;
+}
+.guwen-more {display: block;float:left;background-color: #FFFFFF;}
+.guwen-more a{display: block; width: 33.333333333%; float: left; margin:0; padding: 2rem 0; text-align: center}
+
+.guwen-more a span{ font-size: 2.5rem; text-align: center; line-height: 4rem;color: #464646; display: block;}
