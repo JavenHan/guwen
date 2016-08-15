@@ -45,7 +45,7 @@ input{-webkit-appearance: none;}
 
 .ad,.ad li,.ad li img,.ad p{width: 100%;}
 
-.ad{ margin: 5px 0 24px 0; height: 593px; position: relative; z-index: 1; overflow: hidden;}
+.ad{height: 593px; position: relative; z-index: 1; overflow: hidden;}
 
 .ad li{  height: 593px; float: left; display: block; position: relative; z-index: 1; }
 
