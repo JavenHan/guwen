@@ -1,4 +1,6 @@
-body.index {
+@charset "utf-8";
+
+.main{
     background: #edeeef;
     color: #464646;
 }
@@ -7,6 +9,7 @@ body.index {
 
 .tabbox {
     background: #ffffff;
+    height: 24rem;
     margin-bottom: 1.5rem;
     overflow: hidden;
 }
@@ -70,11 +73,14 @@ body.index {
 }
 
 .floor {
+    width: 100%;
     margin-bottom: 1.5rem;
     background: #ffffff;
     overflow: hidden;
 }
-
+.floor:last-child{
+    margin-bottom:14.5rem;
+}
 .floor-tit {
     display: block;
     height: 126px;
@@ -122,7 +128,8 @@ body.index {
 
 .tuwen , .tuwen2{
     display: block;
-    margin-bottom: 2rem;
+    margin-left: 1.75rem;
+    margin-right: 1.75rem;
     background-color: #FFFFFF;
 }
 .tuwen a , .tuwen2 a{
@@ -130,7 +137,6 @@ body.index {
     width: 25%;
     float: left;
     margin: 0;
-    padding: 2rem 0;
     text-align: center;
 }
 .tuwen a img {
@@ -138,9 +144,10 @@ body.index {
 }
 .tuwen2 a img{
     padding:4rem 4rem 3rem 4rem;
+    vertical-align:bottom;
 }
 .tuwen a span{
-    display: block;
+    display:block;
     font-size: 2.5rem;
     line-height: 4rem;
     color: #464646;
@@ -148,43 +155,61 @@ body.index {
 }
 .tuwen2 a span{
     display: block;
-    font-size: 3rem;
-    line-height: 4rem;
+    font-size: 2.5rem;
     color: #686868;
 }
 .tw_a{
-    display: block;
-    padding: 2.75rem 0;
+    display: -webkit-box;
+    padding: 2.5rem 0;
+    border-bottom: 1px solid #e5e5e5;
 }
 .tw_a span{
     color: #a7a7a7;
-    padding-left: 3rem;
+    padding-left: 2.5rem;
     border-left: 8px solid #369ef5;
     font-size: 3rem;
 }
 .tw_b{
-    display: block;
+    display: -webkit-box;
+    /* margin-left:3rem;*/
+}
+.tw_b ul{
+    padding: 4.5rem 0;
     margin-left:3rem;
+    margin-right:3rem;
 }
-.tw_b ul li{
-    padding: 1rem 2.75rem;
-    list-style-image: url("../images/yd.png");
+/*.tw_b ul li img{
+    padding-top: 1rem;
+    vertical-align:bottom;
 }
+
+ .tw_b ul li{
+   padding-left: 3rem;
+    padding-top:1rem;
+    list-style-image: url("../images/yd1.png");
+}*/
+
 .tw_b ul li span{
-    font-size: 2rem;
+    padding-left: 2.75rem;
+    font-size: 3rem;
     color: #686868;
+    line-height: 6rem;
     text-align: left;
 }
 .tw_c{
-    display: block;
-    padding: 1rem 0;
-    margin-left: 2rem
+    display: -webkit-box;
+    /*padding: 1rem 0;
+    margin-left: 2rem*/
 }
-.tw_c ul li{
-    padding: 1rem 0;
+.tw_c ul{
+    padding:4.5rem 0;
+    margin-left:3rem;
+    margin-right:3rem;
 }
+
 .tw_c ul li span{
-    font-size: 2rem;
+    font-size: 3rem;
+    line-height: 6rem;
     color: #686868;
     text-align: left;
 }
@@ -192,37 +217,48 @@ body.index {
 .lc{
     display: block;
     float: left;
+    width: 100%;
     background-color: #FFFFFF;
 }
 .lc a {
     display: block;
-    width: 31%;
+    width: 33.33333333%;
+    /* height:21rem;*/
     float: left;
     margin: 0;
     padding: 2rem 0;
     text-align: center
 }
-
+.lc a img{
+    height: 8rem;
+    width: 8rem;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
 .lc a span {
     font-size: 2.5rem;
     text-align: center;
-    line-height: 4rem;
     color: #464646;
     display: block;
 }
-
-.zx_btn{
+.foot-btn{
+    width: 100%;
+    height: 13rem;
+    background: url("../images/btn-bg.png") no-repeat;
     position: fixed;
     bottom: 0;
     z-index: 9999;
-    line-height: 8rem;
+}
+.zx_btn{
+
+
+    line-height: 7.5rem;
     text-align: center;
-    width:61.5rem;
-    margin: 0 3rem;
+    width:91%;
+    margin: 2.75rem 4.5%;
     background-color: #369ef5;
-    border-radius: 5px;
-    font-size: 3.5rem;
-    opacity: 0.9;
+    border-radius: 15px;
+    font-size: 3rem;
 }
 
 .zx_btn a{

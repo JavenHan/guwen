@@ -4,7 +4,7 @@
 
 *{ margin: 0; padding: 0; border: 0}
 
-body{font-size:2.5rem; -webkit-text-size-adjust:none;}
+body{/*font-size:2.5rem;*/ -webkit-text-size-adjust:none;}
 
 h1,h2,h3,h4,h5,h6{font-weight: normal;}
 
@@ -64,3 +64,5 @@ input{-webkit-appearance: none;}
 .top .flicking_con{ position:absolute; z-index:2; left:43.333333%; bottom:2rem;}
 .top .flicking_con i{border-radius:50%; background:#FFF; width:1rem; height:1rem; display:block; float:left; margin-left:1rem; margin-right:1rem;}
 .top .flicking_con i.active{ background:#64befa}
+
+.top-t{position: relative; height: 35rem; }
