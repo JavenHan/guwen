@@ -11,6 +11,8 @@ h1,h2,h3,h4,h5,h6{font-weight: normal;}
 ul,li,a{list-style: none;text-decoration: none;}
 
 input{-webkit-appearance: none;}
+/*input禁止输入背景色**/
+input[type="text"]:disabled{ background-color: #FFFFFF}
 
 .fl{ float: left;}
 
@@ -66,3 +68,15 @@ input{-webkit-appearance: none;}
 .top .flicking_con i.active{ background:#64befa}
 
 .top-t{position: relative; height: 35rem; }
+
+/**弹窗遮罩**/
+#gray {
+    width: 100%;
+    height: 100%;
+    background: #414141;
+    opacity: 0.8;
+    position: fixed;
+    top: 0px;
+    display: none;
+    z-index: 99;
+}

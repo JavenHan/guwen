@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta id="meta" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/ic8-20160813.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.touchSlider.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/public.js"></script>
+    <title>发布问题</title>
+</head>
+<body class="bggray">
+<div>
+<!-- 发布问题 -->
+<form name="form" onsubmit="return checkForm(this)">
+    <div class="miaoshu_1" style="width: 100%;background-color: #FFFFFF;display: block;position: relative;">
+        <div class="miaoshu" style="margin: 0 3rem;">
+            <div class="p1" style="width: 61.5rem;padding-top: 2.75rem;">
+                <span class="sp" style="font-size: 3rem;">问题描述</span>
+                <div style="margin-top: 2.75rem;">
+                    <textarea rows="5" wrap="hard" placeholder="请对您遇到的问题进行简单描述，以便为您匹配处理此问题最专业的顾问。"
+                              style="resize: none;font-size: 3rem;width: 91%;border: 2px solid #e5e5e5;border-radius: 25px;color: #a7a7a7;line-height: 5rem;padding: 0 2rem;"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="miaoshu" style="margin: 2.75rem 3rem;height: 25rem;width: 100%;">
+            <div><span class="sp" style="font-size: 3rem;">添加图片</span></div>
+            <div style="margin-top: 2.75rem;padding-bottom: 3rem;margin-bottom: 1.5rem;">
+
+                <!-- 图片添加后 -->
+            <div class="delete">
+                <div style="display: block;width: 13rem;height: 13rem;float: left;margin-right: 2rem;">
+                    <a href="" style=""><img src="images/add-image.png" alt="" width="100%" height="100%"></a>
+                    <div style="position: relative;margin-left: 11rem;margin-top: -14rem;"><img src="images/delete.png" alt=""></div>
+                </div>
+                <div style="display: block;width: 13rem;height: 13rem;float: left;margin-right: 2rem;">
+                    <a href="" style=""><img src="images/add-image.png" alt="" width="100%" height="100%"></a>
+                    <div style="position: relative;margin-left: 11rem;margin-top: -14rem;"><img src="images/delete.png" alt=""></div>
+                </div>
+                <div style="display: block;width: 13rem;height: 13rem;float: left;margin-right: 2rem;">
+                    <a href="" style=""><img src="images/add-image.png" alt="" width="100%" height="100%"></a>
+                    <div style="position: relative;margin-left: 11rem;margin-top: -14rem;"><img src="images/delete.png" alt=""></div>
+                </div>
+            </div>
+                <!-- 图片上传--->
+                <div class="upload"
+                     style="float: left; background: url('images/add-image.png') no-repeat;background-size: 100% 100%;height: 13.5rem;width: 13.5rem;">
+                    <input type="file" style="display: none;">
+                    <!--当图片上传事件出发后，隐藏 -->
+                    <div style="display: none;position: absolute;margin-left: 16rem;margin-top: 5.5rem;">
+                        <span style="color: #a7a7a7;font-size: 2.5rem;">上传车辆故障位置照片或维修单、保单</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="miaoshu_1 mb"  style="margin-bottom: 15.5rem;  width: 100%;background-color: #FFFFFF;display: block;position: relative;">
+        <div class="fill">
+            <div> <span>咨询车型</span>
+                <p><input class="text" type="text" placeholder="请选择咨询车型"><img src="images/jt.png" alt=""></p></div>
+        </div>
+        <div class="fill">
+            <div> <span>悬赏金额</span>
+                <p onclick="jine()"><input  type="text" placeholder="请选择悬赏金额"><img src="images/jt.png" alt=""></p></div>
+        </div>
+        <div class="fill">
+            <div> <span>接听电话</span>
+                <p><input  type="text" placeholder="请填写接听电话"><img src="images/jt.png" alt=""></p></div>
+        </div>
+    </div>
+
+    <div class="foot-btn">
+        <div class="zx_btn">
+            <input  type="submit" value="立即咨询">
+        </div>
+    </div>
+
+</form>
+</div>
+<!-- 悬赏金额弹窗-->
+<div id="gray"></div>
+<!--悬赏金额页面-->
+<div id="jine" class="jine">
+    <div style="
+    text-align: center;
+    padding: 3.25rem 0;
+    margin-right: 4.25rem;
+    margin-left: 4.25rem;
+    border-bottom: 1px #e5e5e5 solid;
+"><span style="
+    font-size: 3.5rem;
+    color: #686868;
+">选择悬赏金额</span></div>
+
+    <div style="
+    margin-left: 4.25rem;
+    margin-right: 4.25rem;
+    margin-top: 2.65rem;
+    margin-bottom: 1.9rem;
+"><span style="
+    font-size: 3rem;
+    line-height: 4.75rem;
+">设置合理的悬赏金额可以更快获得顾问的解答</span></div>
+    <div class="xz_je" style=" margin-left: 4.25rem;
+    margin-right: 4.25rem;">
+        <ul>
+            <li onclick="close()"><a href="">1元</a></li>
+            <li><a href="">5元</a></li>
+            <li><a href="">10元</a></li>
+            <li><a href="">15元</a></li>
+            <li><a href="">20元</a></li>
+            <li><a href="">自定义</a></li>
+        </ul>
+    </div>
+    <div class="close-img"><a href="" onclick="close()"><img src="images/close.png" alt="" ></a></div>
+</div>
+
+
+
+<script>
+
+    function jine(){
+        $('#gray').show();
+        $('#jine').show();
+        $('.foot-btn').css('position','inherit');
+        $('body').css('overflow','hidden');
+    }
+    function close(){
+        $('#gray').hide();
+        $('#jine').hide();
+    }
+</script>
+</body>
+</html>

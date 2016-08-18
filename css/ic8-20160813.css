@@ -250,8 +250,6 @@
     z-index: 9999;
 }
 .zx_btn{
-
-
     line-height: 7.5rem;
     text-align: center;
     width:91%;
@@ -260,7 +258,80 @@
     border-radius: 15px;
     font-size: 3rem;
 }
-
+.zx_btn input{  font-size: 3rem;  color: #ffffff;  border: none;  background: none;  }
 .zx_btn a{
     color: #ffffff;
+}
+
+
+/**发布问题页面**/
+body.bggray{ font-size:2.5rem; background:#edeef0;}
+
+
+.fill{
+
+    background-color: #ffffff;
+    padding: 3.5rem 3rem;
+    position: relative;
+    z-index: 1;
+
+}
+
+.fill div{
+    font-size:3rem;  line-height: 3rem;  padding-bottom: 2.5rem; border-bottom:1px solid #b9b9b9; color:#464646;
+}
+.fill div p{
+    overflow:hidden;
+}
+.fill div span{display: block; float: left; width:15rem;  }
+.fill div input{width: 42.5rem; color:#464646;overflow: hidden; font-size:3rem;}
+.fill div input.text{text-align: right;}
+.fill div input::-webkit-input-placeholder{text-align: right;font-size: 3rem;color: #a7a7a7}
+.fill div input:-ms-input-placeholder{text-align: right;font-size: 3rem;color: #a7a7a7}
+.fill div input::-moz-placeholder{text-align: right;font-size: 3rem;color: #a7a7a7}
+.fill div p img{display: block;float: right;}
+
+.fill:last-child div{border-bottom: none;}
+
+/**金额弹窗***/
+.jine{
+    display: none;
+    width: 64rem;
+    height: 41.5rem;
+    top: 35rem;
+    position: absolute;
+    z-index: 100;
+    background-color: #fff;
+    border: 1px solid #ebeaea;
+    border-radius: 25px;
+    margin-left: 1.75rem;
+    margin-right: 1.75rem;
+}
+
+.xz_je ul li{
+    padding: 1rem 0;
+    float: left;
+    width: 17.5rem;
+    height: 4rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    background-image: url("../images/select.png");
+}
+.xz_je ul li:nth-child(3n+0){
+    margin-right: 0;
+}
+.xz_je ul li a{
+    font-size:3rem;
+    color: #5b5f68;
+}
+
+.close-img{
+    width: 5.5rem;
+    height: 5.5rem;
+    left: 44%;
+    top: 44.5rem;
+    position: absolute;
+    z-index: 100;
+    display: block;
 }
