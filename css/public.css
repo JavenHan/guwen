@@ -8,7 +8,7 @@ body{/*font-size:2.5rem;*/ -webkit-text-size-adjust:none;}
 
 h1,h2,h3,h4,h5,h6{font-weight: normal;}
 
-ul,li,a{list-style: none;text-decoration: none;}
+ul,li,a{list-style: none;text-decoration: none;height: inherit;}
 
 input{-webkit-appearance: none;}
 /*input禁止输入背景色**/
@@ -24,6 +24,8 @@ input[type="text"]:disabled{ background-color: #FFFFFF}
 .b1{ background:#3edeef;}
 .bn{ display:none;}
 .b2{ background:#edeef0; padding-bottom:10.5rem;}
+
+.line { margin-left: 3rem;width:64.5rem;  height: 1px;  background-color: #e5e5e5;  }
 
 
 /* 头部通用样式 */
@@ -79,4 +81,41 @@ input[type="text"]:disabled{ background-color: #FFFFFF}
     top: 0px;
     display: none;
     z-index: 99;
+}
+/**咨询介绍页面样式**/
+.tabbox{
+    background: #ffffff;
+    height: 24rem;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.floor {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    background: #ffffff;
+    overflow: hidden;
+}
+.floor:last-child{
+    margin-bottom:14.5rem;
+}
+.floor-tit {
+    display: block;
+    height: 126px;
+    border-bottom: 1px solid #b9b9b9;
+}
+
+.floor-tit h2 {
+    display: block;
+    float: left;
+    height: 72px;
+    padding: 27px 46px;
+}
+
+.floor-tit a {
+    display: block;
+    float: right;
+    height: 72px;
+    color: #cccccc;
+    padding: 38px 46px;
 }

@@ -14,49 +14,47 @@
 <body class="bggray">
 <div>
 <!-- 发布问题 -->
-<form name="form" onsubmit="return checkForm(this)">
-    <div class="miaoshu_1" style="width: 100%;background-color: #FFFFFF;display: block;position: relative;">
-        <div class="miaoshu" style="margin: 0 3rem;">
-            <div class="p1" style="width: 61.5rem;padding-top: 2.75rem;">
-                <span class="sp" style="font-size: 3rem;">问题描述</span>
-                <div style="margin-top: 2.75rem;">
-                    <textarea rows="5" wrap="hard" placeholder="请对您遇到的问题进行简单描述，以便为您匹配处理此问题最专业的顾问。"
-                              style="resize: none;font-size: 3rem;width: 91%;border: 2px solid #e5e5e5;border-radius: 25px;color: #a7a7a7;line-height: 5rem;padding: 0 2rem;"></textarea>
+<form name="form">
+    <div class="miaoshu">
+        <div class="miaoshu-1">
+            <div>
+                <span>问题描述</span>
+                <div class="miaoshu-txt">
+                    <textarea rows="5" wrap="hard" placeholder="请对您遇到的问题进行简单描述，以便为您匹配处理此问题最专业的顾问。"></textarea>
                 </div>
             </div>
         </div>
-        <div class="miaoshu" style="margin: 2.75rem 3rem;height: 25rem;width: 100%;">
-            <div><span class="sp" style="font-size: 3rem;">添加图片</span></div>
-            <div style="margin-top: 2.75rem;padding-bottom: 3rem;margin-bottom: 1.5rem;">
+        <div class="miaoshu-2">
+            <div><span>添加图片</span></div>
+            <div class="img-box">
 
                 <!-- 图片添加后 -->
-            <div class="delete">
-                <div style="display: block;width: 13rem;height: 13rem;float: left;margin-right: 2rem;">
-                    <a href="" style=""><img src="images/add-image.png" alt="" width="100%" height="100%"></a>
-                    <div style="position: relative;margin-left: 11rem;margin-top: -14rem;"><img src="images/delete.png" alt=""></div>
+            <div class="wenti-imgage">
+                <div>
+                    <a href=""><img src="images/add-image.png" alt="" width="100%" height="100%"></a>
+                    <div class="delete-img"><img src="images/delete.png" alt=""></div>
                 </div>
-                <div style="display: block;width: 13rem;height: 13rem;float: left;margin-right: 2rem;">
-                    <a href="" style=""><img src="images/add-image.png" alt="" width="100%" height="100%"></a>
-                    <div style="position: relative;margin-left: 11rem;margin-top: -14rem;"><img src="images/delete.png" alt=""></div>
+                <div>
+                    <a href=""><img src="images/add-image.png" alt="" width="100%" height="100%"></a>
+                    <div class="delete-img"><img src="images/delete.png" alt=""></div>
                 </div>
-                <div style="display: block;width: 13rem;height: 13rem;float: left;margin-right: 2rem;">
-                    <a href="" style=""><img src="images/add-image.png" alt="" width="100%" height="100%"></a>
-                    <div style="position: relative;margin-left: 11rem;margin-top: -14rem;"><img src="images/delete.png" alt=""></div>
+                <div>
+                    <a href=""><img src="images/add-image.png" alt="" width="100%" height="100%"></a>
+                    <div class="delete-img"><img src="images/delete.png" alt=""></div>
                 </div>
             </div>
                 <!-- 图片上传--->
-                <div class="upload"
-                     style="float: left; background: url('images/add-image.png') no-repeat;background-size: 100% 100%;height: 13.5rem;width: 13.5rem;">
-                    <input type="file" style="display: none;">
+                <div class="upload">
+                    <input type="file">
                     <!--当图片上传事件出发后，隐藏 -->
-                    <div style="display: none;position: absolute;margin-left: 16rem;margin-top: 5.5rem;">
-                        <span style="color: #a7a7a7;font-size: 2.5rem;">上传车辆故障位置照片或维修单、保单</span>
+                    <div>
+                        <span>上传车辆故障位置照片或维修单、保单</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="miaoshu_1 mb"  style="margin-bottom: 15.5rem;  width: 100%;background-color: #FFFFFF;display: block;position: relative;">
+    <div class="miaoshu_1">
         <div class="fill">
             <div> <span>咨询车型</span>
                 <p><input class="text" type="text" placeholder="请选择咨询车型"><img src="images/jt.png" alt=""></p></div>
@@ -73,7 +71,7 @@
 
     <div class="foot-btn">
         <div class="zx_btn">
-            <input  type="submit" value="立即咨询">
+            <input  type="submit" value="立即咨询" >
         </div>
     </div>
 
@@ -83,36 +81,33 @@
 <div id="gray"></div>
 <!--悬赏金额页面-->
 <div id="jine" class="jine">
-    <div style="
-    text-align: center;
-    padding: 3.25rem 0;
-    margin-right: 4.25rem;
-    margin-left: 4.25rem;
-    border-bottom: 1px #e5e5e5 solid;
-"><span style="
-    font-size: 3.5rem;
-    color: #686868;
-">选择悬赏金额</span></div>
-
-    <div style="
-    margin-left: 4.25rem;
-    margin-right: 4.25rem;
-    margin-top: 2.65rem;
-    margin-bottom: 1.9rem;
-"><span style="
-    font-size: 3rem;
-    line-height: 4.75rem;
-">设置合理的悬赏金额可以更快获得顾问的解答</span></div>
-    <div class="xz_je" style=" margin-left: 4.25rem;
-    margin-right: 4.25rem;">
+    <div class="sp1">
+        <span style="">选择悬赏金额</span>
+    </div>
+    <div class="sp2">
+        <span>设置合理的悬赏金额可以更快获得顾问的解答</span>
+    </div>
+    <div class="xz_je">
         <ul>
-            <li onclick="close()"><a href="">1元</a></li>
+            <li><a href="">1元</a></li>
             <li><a href="">5元</a></li>
             <li><a href="">10元</a></li>
             <li><a href="">15元</a></li>
             <li><a href="">20元</a></li>
-            <li><a href="">自定义</a></li>
+            <li  id="custom"><a href="">自定义</a></li>
         </ul>
+    </div>
+    <div class="tj">
+            <div class="custom-jine">
+                <span>悬赏金额</span>
+                <p>
+                    <input class="text" id="money" type="text" placeholder="请输入悬赏金额">
+                    <img src="images/jt.png" alt="">
+                </p>
+            </div>
+        <div class="ok_btn">
+            <button>确认</button>
+        </div>
     </div>
     <div class="close-img"><a href="" onclick="close()"><img src="images/close.png" alt="" ></a></div>
 </div>
@@ -126,7 +121,25 @@
         $('#jine').show();
         $('.foot-btn').css('position','inherit');
         $('body').css('overflow','hidden');
+        $('#custom').click(function(){
+            $('.tj').css('display','block');
+            $('.jine').css('height','62rem').css('top','20rem');
+            $('.close-img').css('top','64.5rem');
+            console.log($('#money').val());
+            if($('#money').val() == ''){
+                $('.ok_btn button').css('background-color','#92cbfa');
+            }
+
+            $('#money').bind('input propertychage',function(){
+            $('.ok_btn button').css('background-color', '#369ef5');
+            })
+
+
+            return false;
+        });
     }
+
+
     function close(){
         $('#gray').hide();
         $('#jine').hide();
