@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta id="meta" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/ic8-20160813.css">
+    <link rel="stylesheet" href="css/list.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.touchSlider.js"></script>
+    <script src="js/public.js"></script>
+    <script src="js/list.js"></script>
+    <title>顾问列表</title>
+</head>
+<body class="bggray">
+<!-- 顾问分类 -->
+<!-- 地点排序 -->
+<!--
+<section class="list-top">
+    <dl class="retrie">
+        <dt>
+            <a id="dtpx" href="javascript:;">深圳市</a>
+            <a id="xzpx" href="javascript:;">默认排序</a>
+        </dt>
+        <dd class="dtpx">
+            <ul class="slide downlist">
+                <li class="active"><a>附近</a></li>
+                <li><a>南山区</a></li>
+                <li><a>福田区</a></li>
+                <li><a>罗湖区</a></li>
+                <li><a>盐田区</a></li>
+                <li><a>宝安区</a></li>
+                <li><a>龙安区</a></li>
+                <li><a>龙华新区</a></li>
+                <li><a>光明新区</a></li>
+                <li><a>坪山新区</a></li>
+            </ul>
+        </dd>
+        <dd class="xzpx">
+            <ul class="slide downlist">
+                <li><a href="">默认排序</a><span class="select-box on"><input type="radio" checked="checked"
+                                                                          name="dz-select" value="1"
+                                                                          class="radiosclass"></span></li>
+                <li><a href="">评分最高</a><span class="select-box"><input type="radio" checked="checked" name="dz-select"
+                                                                       value="1" class="radiosclass"></span></li>
+                <li><a href="">评价最多</a><span class="select-box"><input type="radio" checked="checked" name="dz-select"
+                                                                       value="1" class="radiosclass"></span></li>
+                <li><a href="">价格由高到低</a><span class="select-box"><input type="radio" checked="checked" name="dz-select"
+                                                                         value="1" class="radiosclass"></span></li>
+                <li><a href="">价格由低到高</a><span class="select-box"><input type="radio" checked="checked" name="dz-select"
+                                                                         value="1" class="radiosclass"></span></li>
+            </ul>
+        </dd>
+    </dl>
+</section>-->
+<!-- screening -->
+<div class="screening">
+    <ul>
+        <li class="Regional"><span>深圳市</span></li>
+        <li class="Sort"><span>默认排序</span></li>
+    </ul>
+</div>
+<!-- End screening -->
+<!--所在地点-->
+<div class="grade-eject">
+    <ul class="grade-w" id="gradew">
+        <li onclick="grade1(this)">附近</li>
+        <li onclick="grade1(this)">南山区</li>
+        <li onclick="grade1(this)">福田区</li>
+        <li onclick="grade1(this)">罗湖区</li>
+        <li onclick="grade1(this)">盐田区</li>
+        <li onclick="grade1(this)">宝安区</li>
+        <li onclick="grade1(this)">龙岗区</li>
+        <li onclick="grade1(this)">龙华新区</li>
+        <li onclick="grade1(this)">光明新区</li>
+        <li onclick="grade1(this)">坪山新区</li>
+    </ul>
+    <ul class="grade-t" id="gradet">
+        <li onclick="gradet(this)">全部</li>
+        <li onclick="gradet(this)">蛇口/海上世界</li>
+        <li onclick="gradet(this)">南油</li>
+        <li onclick="gradet(this)">南山中心区</li>
+        <li onclick="gradet(this)">西丽</li>
+        <li onclick="gradet(this)">华侨城</li>
+        <li onclick="gradet(this)">科技园</li>
+        <li onclick="gradet(this)">南头/前海</li>
+    </ul>
+</div>
+<!-- End 所在地点 -->
+<!-- 排序方式-->
+<div class="Sort-eject Sort-height">
+    <ul class="Sort-Sort" id="Sort-Sort">
+        <li onclick="Sorts(this)"><a href="">默认排序</a><span class="select-box on"><input type="radio" checked="checked"
+                                                                                        name="dz-select" value="1"
+                                                                                        class="radiosclass"></span></li>
+        <li onclick="Sorts(this)"><a href="">评分最高</a><span class="select-box"><input type="radio" checked="checked" name="dz-select"
+                                                                                     value="1" class="radiosclass"></span></li>
+        <li onclick="Sorts(this)"><a href="">评价最多</a><span class="select-box"><input type="radio" checked="checked" name="dz-select"
+                                                                                     value="1" class="radiosclass"></span></li>
+        <li onclick="Sorts(this)"><a href="">价格由高到低</a><span class="select-box"><input type="radio" checked="checked" name="dz-select"
+                                                                                       value="1" class="radiosclass"></span></li>
+        <li onclick="Sorts(this)"><a href="">价格由低到高</a><span class="select-box"><input type="radio" checked="checked" name="dz-select"
+                                                                                       value="1" class="radiosclass"></span></li>
+    </ul>
+</div>
+
+<div id="gray"></div>
+<!--顾问列表 -->
+<div class="list-con">
+    <div class="list-xq">
+        <div class="list-img">
+            <img src="images/tx.png" alt="">
+        </div>
+        <div class="list-js">
+            <ul>
+                <li><span>张海棠</span>
+                    <div><span>Lv3 中级顾问</span></div>
+                </li>
+                <li><span>i车车顾问认证-高级技师</span></li>
+                <li><span>4.9分/600次服务</span>
+                    <div><span>4.6km</span></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="list-xq">
+        <div class="list-img">
+            <img src="images/tx.png" alt="">
+        </div>
+        <div class="list-js">
+            <ul>
+                <li><span>张海棠</span>
+                    <div><span>Lv3 中级顾问</span></div>
+                </li>
+                <li><span>i车车顾问认证-高级技师</span></li>
+                <li><span>4.9分/600次服务</span>
+                    <div><span>4.6km</span></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="list-xq">
+        <div class="list-img">
+            <img src="images/tx.png" alt="">
+        </div>
+        <div class="list-js">
+            <ul>
+                <li><span>张海棠</span>
+                    <div><span>Lv3 中级顾问</span></div>
+                </li>
+                <li><span>i车车顾问认证-高级技师</span></li>
+                <li><span>4.9分/600次服务</span>
+                    <div><span>4.6km</span></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="list-xq">
+        <div class="list-img">
+            <img src="images/tx.png" alt="">
+        </div>
+        <div class="list-js">
+            <ul>
+                <li><span>张海棠</span>
+                    <div><span>Lv3 中级顾问</span></div>
+                </li>
+                <li><span>i车车顾问认证-高级技师</span></li>
+                <li><span>4.9分/600次服务</span>
+                    <div><span>4.6km</span></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="list-xq">
+        <div class="list-img">
+            <img src="images/tx.png" alt="">
+        </div>
+        <div class="list-js">
+            <ul>
+                <li><span>张海棠</span>
+                    <div><span>Lv3 中级顾问</span></div>
+                </li>
+                <li><span>i车车顾问认证-高级技师</span></li>
+                <li><span>4.9分/600次服务</span>
+                    <div><span>4.6km</span></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="list-xq">
+        <div class="list-img">
+            <img src="images/tx.png" alt="">
+        </div>
+        <div class="list-js">
+            <ul>
+                <li><span>张海棠</span>
+                    <div><span>Lv3 中级顾问</span></div>
+                </li>
+                <li><span>i车车顾问认证-高级技师</span></li>
+                <li><span>4.9分/600次服务</span>
+                    <div><span>4.6km</span></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="list-xq">
+        <div class="list-img">
+            <img src="images/tx.png" alt="">
+        </div>
+        <div class="list-js">
+            <ul>
+                <li><span>张海棠</span>
+                    <div><span>Lv3 中级顾问</span></div>
+                </li>
+                <li><span>i车车顾问认证-高级技师</span></li>
+                <li><span>4.9分/600次服务</span>
+                    <div><span>4.6km</span></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="list-xq">
+        <div class="list-img">
+            <img src="images/tx.png" alt="">
+        </div>
+        <div class="list-js">
+            <ul>
+                <li><span>张海棠</span>
+                    <div><span>Lv3 中级顾问</span></div>
+                </li>
+                <li><span>i车车顾问认证-高级技师</span></li>
+                <li><span>4.9分/600次服务</span>
+                    <div><span>4.6km</span></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="line"></div>
+</div>
+<script>
+   /* $('.retrie dt a').click(function () {
+        var $t = $(this);
+        $("#gray").show();
+        if ($t.hasClass('up')) {
+            $(".retrie dt a").removeClass('up');
+            $('.downlist').hide();
+            return false;
+        } else {
+            $(".retrie dt a").removeClass('up');
+            $('.downlist').hide();
+            $t.addClass('up');
+            $('.downlist').eq($(".retrie dt a").index($(this)[0])).show();
+        }
+    });*/
+
+    $(".select-box").click(function () {
+        $(".select-box").removeClass('on');
+        $(this).addClass('on');
+    });
+   /* $(".dd-list li").click(function () {
+        $(".slide li").removeClass('active');
+        $(this).addClass('active');
+    })*/
+
+</script>
+
+
+
+<script>
+
+</script>
+</body>
+</html>

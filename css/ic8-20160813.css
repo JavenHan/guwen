@@ -299,7 +299,7 @@ padding: 4.5rem 6.25rem 1.5rem 6.25rem;
 /**发布问题页面**/
 body.bggray {
     font-size: 2.5rem;
-    background: #edeef0;
+    background: #e5e5e5;
 }
 
 .fill {
@@ -595,3 +595,58 @@ body.bggray {
     z-index: 100;
     display: block;
 }
+
+
+
+/** 分类下拉 ***/
+/*.list-top{display: block;margin-bottom: 1.5rem;}
+.retrie{position: relative;z-index: 102; height: 10rem;background-color: #FFFFFF;}
+.retrie dt {overflow: hidden; }
+.retrie dt a{position: relative;float: left;width:50%;height: 3rem;line-height: 3rem;padding: 3.5rem 0;color: #a7a7a7;font-size:3rem;text-align: center;}
+.retrie dt a:after {position: absolute;margin-left:1.5rem;width: 2.5rem;height: 2.5rem;background: url("../images/down.png") no-repeat;content: ' ';}
+.retrie dt .up:after{position: absolute;margin-left:1.5rem;width: 2.5rem;height: 2.5rem;background: url("../images/up.png") no-repeat;content: ' ';}
+.retrie dd { position: relative; }
+
+/***地点分类选择****/
+/*.dd-list li{  display: block;}
+.dd-list li a{ display: block; width: 33.75rem !important;text-align: center;background:#FFFFFF !important;color:#414141; font-size:3rem; }
+.dd-list li.select{background-color: #FFFFFF;color: #3edeef;}
+.xzpx ul{padding-left: 3rem;}
+/*选中li样式*/
+
+/*.active{border-left: 0.5rem solid #369ef5;}
+.active ul{display: block !important;}
+.active a{color: #369ef5 !important; }
+*/
+/* ===== slide-area ===== */
+/*.slide {position: absolute;top: 0px;z-index: 104;display: none;width: 100%;overflow-y: auto;background-color: #fff;}
+.slide li {  display: block;  height: 10rem;  }
+.slide li a {display: block;float: left; padding: 3.5rem 0;height: 3rem;width:58.5rem;background-color: transparent;line-height: 3rem;color: #686868;font-size: 3rem;}
+.slide li a:hover{background-color: #FFFFFF;}
+.slide li a.select { background-color: #fff; }
+.slide li ul{float: right;display: none;height: 10rem;width: 33.25rem;text-align: center;}
+.slide li ul li span{display: block;font-size: 3rem;color: #a7a7a7;padding: 3.5rem 0;}
+.slide li:first-child ul li span:before{display: inline-block;margin-right: 0.5rem;width: 3rem;height: 3rem;background: url("../images/dd.png") no-repeat;content: ' '; vertical-align:middle;}
+*/
+.select-box {  display: block;background:url("../images/select-no.png") no-repeat;  border-radius: 50px;float: right;width: 3rem;height:3rem;margin: 3.5rem 0;text-align: center;margin-right: 3rem;}
+.radiosclass{opacity: 0;cursor: pointer;filter: alpha(opacity=0);}
+.on{background:url("../images/select-yes.png") no-repeat; }
+
+
+
+
+.list-con{display: block;overflow: hidden;background-color: #FFFFFF;}
+.list-xq{margin: 0 3rem;display: block;height: 20rem; float: left;}
+.list-img{display: block;float: left;width: 13rem;height: 13rem;margin-right: 3rem;padding: 3.5rem 0;/* padding: 3.5rem 3rem; */}
+.list-img img {width:100%;border-radius: 50%;border: 2px solid #e5e5e5;}
+.list-js{display: block;float: left;width:45.5rem;margin: 3.5rem 0;}
+.list-js ul li{margin-bottom: 2.5rem;}
+.list-js ul li:last-child{margin-bottom: 0;}
+.list-js ul li span{font-size: 2.5rem;color: #a7a7a7;}
+.list-js ul li:nth-of-type(1) span{font-size: 3rem;color: #44403f;}
+.list-js ul li:last-child span:before{display: inline-block;margin-right: 0.5rem;width: 2.5rem;height: 2.5rem;background: url("../images/star.png") no-repeat;content: ' '; vertical-align:middle;}
+.list-js ul li div{float: right;}
+.list-js ul li:first-child div{float: right;width: 14.5rem;  height: 3.5rem;  background-color: #369ef5;  text-align: center;  border-radius: 50px;}
+.list-js ul li:first-child div span{color: #FFFFFF;font-size: 2rem;}
+.list-js ul li:last-child div span{font-size: 2.5rem;color: #bebebe;}
+.list-js ul li:last-child div span:before{display: none;}
