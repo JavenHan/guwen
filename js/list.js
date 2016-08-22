@@ -80,7 +80,7 @@ function grade1(wbj){
         a.style.background = "";
         a.style.color = "#414141";
     };
-    wbj.style.background = "#eee";
+
     wbj.style.color = "#369ef5";
     console.log(2);
 }

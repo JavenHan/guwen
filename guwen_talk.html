@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta id="meta" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/ic8-20160813.css">
+    <link rel="stylesheet" href="css/talk.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/public.js"></script>
+    <title>聊天页面</title>
+
+
+    <style>
+
+
+    </style>
+</head>
+<body class="index">
+<!--头部
+<div class="head">
+    <a href="#" class="back"><img src="images/fanhui.jpg" alt="" class="a1"><span>返回</span></a>
+    <span class="tit">顾问养车</span>
+    <a href="#" class="fr"><img src="images/yuan.jpg" alt="" class="a2"></a>
+    <br clear="all">
+</div>-->
+<div class=" talk-main">
+    <div class="main_inner clearfix">
+        <div class="panel"></div>
+        <div id="chatArea" class="box chat">
+            <div class="box_hd"></div>
+            <div class="box_bd" id="messageList">
+                <div class="message message-fs">
+                    <div class="first-time"><div><span>16:58</span></div></div>
+                    <img class="avatar" src="images/tx.png" />
+                    <div class="name"><span>张海棠</span></div>
+                    <div class="talk-js first">
+                        <ul>
+                            <li><span>张海棠</span><span>Lv3 中级顾问</span></li>
+                            <li><span>i车车顾问认证-高级技师</span></li>
+                            <li><span>4.9分/600次服务</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="message">
+                <img class="avatar" src="images/tx.png" />
+                <div class="tl-content">
+                    <div class="name"><span>张海棠</span></div>
+                    <div class="bubble bubble_default ">
+                        <div class="bubble_cont left">
+                            <div class="plain">
+                                <pre>(⊙o⊙)…好吧(⊙o⊙)…好吧
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="message">
+                    <img class="avatar" src="images/tx.png" />
+                    <div class="tl-content">
+                        <div class="name"><span>张海棠</span></div>
+                        <div class="bubble bubble_default ">
+                            <div class="bubble_cont left">
+                                <div class="plain">
+                                <pre>(⊙o⊙)…好吧(⊙o⊙)…好吧
+                                </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="message">
+                    <img class="avatar" src="images/tx.png" />
+                    <div class="tl-content">
+                        <div class="name"><span>张海棠</span></div>
+                        <div class="bubble bubble_default ">
+                            <div class="bubble_cont left">
+                                <div class="plain">
+                                <pre>(⊙o⊙)…好吧(⊙o⊙)…好吧(⊙o⊙)…好吧(⊙o⊙)…好吧
+                                    (⊙o⊙)…好吧(⊙o⊙)…好吧
+                                    (⊙o⊙)…好吧(⊙o⊙)…好吧
+                                    (⊙o⊙)…好吧(⊙o⊙)…好吧
+                                </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="message me">
+                    <img class="avatar" src="images/tx.png" />
+                    <div class="tl-content">
+                        <div class="name"><span>我</span></div>
+                        <div class="bubble bubble_default ">
+                            <div class="bubble_cont right">
+                                <div class="plain">
+                                <pre>(⊙o⊙)…好吧(⊙o⊙)…好吧
+                                </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- talk end -->
+                <div class="message message-end">
+                    <div class="endsp"><div><span>服务结束</span></div></div>
+                    <div class="endpj"><span>给顾问一点鼓励，来<a href="">写个好评</a>吧</span></div>
+                </div>
+            </div>
+            <div class="box_ft">
+               <div class="box_lt">
+                   <input type="text"><div class="fs-img"><img src="images/icon-fs.png" alt=""></div>
+               </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $("#messageList").scrollTop($("#messageList").height());
+    })
+
+</script>
+</body>
+</html>
