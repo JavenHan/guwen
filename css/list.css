@@ -43,6 +43,11 @@ div.screening>ul>.current>span{
     width: 100%;
     -webkit-transition-duration: 0.4s;
 }
+.grade-eject>ul{
+   
+    padding: 0;
+   
+}
 .grade-eject>ul:nth-child(2){
     padding: 0;
 }
@@ -57,12 +62,14 @@ div.screening>ul>.current>span{
     background: #fff;
     position: absolute;
     z-index: 1;
+text-align:center;
 }
 .grade-eject>ul.grade-t{
     background: #eee;
     position: absolute;
     z-index: 2;
     left: 100%;
+text-align:center;
 }
 .grade-eject>ul.grade-t>{
     border-bottom: solid 1px #e5e5e5;

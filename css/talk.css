@@ -110,6 +110,9 @@ body {
     background: #f5f5f5;
     border-radius: 50px;
 }
+.box_lt a{
+    margin: 1.5rem 0;font-size: 2.5rem;color: #ffffff;background-color: #369ef5;padding: 1.5rem 1.25rem;border-radius: 25px;
+}
 .fs-img{
     display: block;  float: right;margin-right: 3rem;
 }
