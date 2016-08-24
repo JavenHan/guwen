@@ -26,7 +26,7 @@ input[type="text"]:disabled{ background-color: #FFFFFF}
 .b2{ background:#edeef0; padding-bottom:10.5rem;}
 
 .line { margin-left: 3rem;width:64.5rem;  height: 1px;  float: left; background-color: #e5e5e5;  }
-
+.none{display: none;}
 
 /* 头部通用样式 */
 

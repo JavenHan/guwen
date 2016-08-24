@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta id="meta" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/ic8-20160813.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/public.js"></script>
+    <title>订单确认页</title>
+
+    <style>
+
+    </style>
+</head>
+<body class="bggray">
+<div class="miaoshu_1" style="margin-bottom: 1.5rem;">
+    <div class="fill">
+        <div><span>咨询车型</span>
+            <p><input class="text" type="text" placeholder="请选择咨询车型" value="林肯MKZ" style="color: #369ef5;"
+                      disabled="disabled"></p></div>
+    </div>
+    <div class="fill">
+        <div><span>悬赏金额</span>
+            <p><input class="text" type="text" placeholder="请选择悬赏金额" value="5元" style="color: #369ef5;"
+                      disabled="disabled"></p></div>
+    </div>
+</div>
+<div class="miaoshu-1" style="background-color: #FFFFFF;">
+    <div>
+        <span>问题描述</span>
+        <div class="miaoshu-txt" style="margin: 0;">
+            <textarea rows="5" wrap="hard" placeholder="请对您遇到的问题进行简单描述，以便为您匹配处理此问题最专业的顾问。"
+                      disabled="disabled" style="color: #686868;">请对您遇到的问题进行简单描述，以便为您匹配处理此问题最专业的顾问。请对您遇到的问题进行简单描述，以便为您匹配处理此问题最专业的顾问。
+            </textarea>
+        </div>
+    </div>
+</div>
+<!-- 如果用户没有上传图片，此区域不显示 添加.none标签-->
+<div class="miaoshu-2" style="background-color: #FFFFFF;margin:0;padding: 2.75rem 3rem;">
+    <div><span>上传图片</span></div>
+    <div class="img-box">
+
+        <!-- 图片添加后 -->
+        <div class="wenti-imgage">
+            <div>
+                <a href=""><img src="images/add-image.png" alt="" width="100%" height="100%"></a>
+
+            </div>
+            <div>
+                <a href=""><img src="images/add-image.png" alt="" width="100%" height="100%"></a>
+
+            </div>
+            <div>
+                <a href=""><img src="images/add-image.png" alt="" width="100%" height="100%"></a>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="foot-btn">
+    <div class="zx_btn">
+        <input type="submit" value="立即支付" onclick="zhifu()">
+    </div>
+</div>
+<div id="gray"></div>
+
+<div id="pping" class="pping">
+    <div class="sp1">
+        <span style="">正在匹配顾问</span>
+    </div>
+    <div class="sp2">
+        <span>i车顾问在接单后会尽快解答您的问题，请留意消息通知或保持电话畅通</span>
+    </div>
+    <div class="tj" style="display: block">
+    <div class="ok_btn">
+        <button>返回首页</button>
+    </div>
+        </div>
+</div>
+<script>
+
+    function zhifu(){
+        $('#gray').show();
+        $('#pping').show();
+        $('.foot-btn').css('position','inherit');
+        $('body').css('overflow','hidden');
+
+    }
+
+</script>
+</body>
+</html>
