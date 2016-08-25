@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta id="meta" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/ic8-20160813.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/public.js"></script>
+    <script type="text/javascript" src="js/jquery.charfirst.pinyin.js"></script>
+    <script type="text/javascript" src="js/sort.js"></script>
+
+    <style>
+        .sort_box {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .sort_list {
+            padding-left: 3rem;
+            position: relative;
+            height: 10rem;
+            width: 62.5rem;
+            line-height: 10rem;
+        }
+
+        .sort_list .num_logo {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 10px;
+            overflow: hidden;
+            position: absolute;
+            top: 2rem;
+
+        }
+
+        .sort_list .num_logo img {
+            width: 5rem;
+            height: 5rem;
+        }
+
+        .sort_list .num_name {
+            margin-left: 7rem;
+            font-size: 3rem;
+            line-height: 10rem;
+            height: 10rem;
+        }
+
+        .sort_letter {
+            height: 5rem;
+            line-height: 5rem;
+            padding-left: 3rem;
+            color: #686868;
+            font-size: 3rem;
+        }
+
+        .initials {
+            position: fixed;
+            top: 12.75rem;
+            right: 1rem;
+            width: 5rem;
+            text-align: center;
+            font-size: 3rem;
+            z-index: 99;
+        }
+
+        .initials li {
+            height: 4rem !important;
+            color: #369ef5;
+        }
+        .brand2{
+            display: none;
+            width: 50rem;
+            height: 100%;
+            left: 17.5rem;
+            top:0rem;
+            overflow: scroll;
+            position: absolute;
+            z-index: 100;
+            background-color: #FFFFFF;
+        }
+        .brand2 div{
+            width: 100%;
+            height: 10rem;
+            font-size: 3rem;
+            line-height: 10rem;
+        }
+        .brand2 div span{
+            padding-left: 3rem;
+        }
+    </style>
+    <title>车型选择</title>
+</head>
+<body>
+<div class="sort_box">
+    <div class="sort_list" onclick="brand_00select()">
+        <div class="num_logo">
+            <img src="images/aodi.png" alt="">
+        </div>
+        <div class="num_name">奥迪</div>
+    </div>
+    <div class="sort_list">
+        <div class="num_logo">
+            <img src="images/aodi.png" alt="">
+        </div>
+        <div class="num_name">标志</div>
+    </div>
+    <div class="sort_list">
+        <div class="num_logo">
+            <img src="images/aodi.png" alt="">
+        </div>
+        <div class="num_name">本田</div>
+    </div>
+    <div class="sort_list">
+        <div class="num_logo">
+            <img src="images/aodi.png" alt="">
+        </div>
+        <div class="num_name">宝马</div>
+    </div>
+    <div class="sort_list">
+        <div class="num_logo">
+            <img src="images/aodi.png" alt="">
+        </div>
+        <div class="num_name">北京汽车</div>
+    </div>
+    <div class="sort_list">
+        <div class="num_logo">
+            <img src="images/aodi.png" alt="">
+        </div>
+        <div class="num_name">奔驰</div>
+    </div>
+    <div class="sort_list">
+        <div class="num_logo">
+            <img src="images/aodi.png" alt="">
+        </div>
+        <div class="num_name">布加迪</div>
+    </div>
+    <div class="sort_list">
+        <div class="num_logo">
+            <img src="images/aodi.png" alt="">
+        </div>
+        <div class="num_name">别克</div>
+    </div>
+    <div class="sort_list">
+        <div class="num_logo">
+            <img src="images/aodi.png" alt="">
+        </div>
+        <div class="num_name">宾利</div>
+    </div>
+    <div class="sort_list">
+        <div class="num_logo">
+            <img src="images/aodi.png" alt="">
+        </div>
+        <div class="num_name">上海大众</div>
+    </div>
+</div>
+<div class="initials">
+    <ul>
+
+    </ul>
+</div>
+<div id="gray"></div>
+<div id="brand2" class="brand2">
+    <div>
+        <span>CR-V</span>
+    </div>
+    <div>
+        <span>CR-Z</span>
+    </div>
+    <div>
+        <span>INSIGHT</span>
+    </div>
+    <div>
+        <span>XR-V</span>
+    </div>
+    <div>
+        <span>凌派</span>
+    </div>
+    <div>
+        <span>哥瑞</span>
+    </div>
+    <div>
+        <span>奥德赛</span>
+    </div>
+    <div>
+        <span>思域</span>
+    </div>
+    <div>
+        <span>思迪</span>
+    </div>
+    <div>
+        <span>思铂睿</span>
+    </div>
+    <div>
+        <span>时韵</span>
+    </div>
+    <div>
+        <span>CR-V</span>
+    </div>
+    <div>
+        <span>CR-Z</span>
+    </div>
+    <div>
+        <span>INSIGHT</span>
+    </div>
+    <div>
+        <span>XR-V</span>
+    </div>
+    <div>
+        <span>凌派</span>
+    </div>
+    <div>
+        <span>哥瑞</span>
+    </div>
+    <div>
+        <span>奥德赛</span>
+    </div>
+    <div>
+        <span>思域</span>
+    </div>
+    <div>
+        <span>思迪</span>
+    </div>
+    <div>
+        <span>思铂睿</span>
+    </div>
+    <div>
+        <span>时韵</span>
+    </div>
+</div>
+<script>
+    function brand_00select(){
+        $('#gray').show();
+        $('#brand2').show();
+        $('body').css('overflow','hidden');
+    }
+</script>
+</body>
+</html>

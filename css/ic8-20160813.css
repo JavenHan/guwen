@@ -1015,3 +1015,91 @@ body.bggray {
     margin-left: 1.75rem;
     margin-right: 1.75rem;
 }
+
+/***服务评价***/
+.fwpj {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.fwpj-t {
+    padding: 0 3rem;
+}
+
+.fwpj-t img {
+    height: 5.5rem;
+    width: 5.5rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+    padding: 2.25rem 0;
+}
+
+.fwpj-t span:nth-child(2) {
+    position: absolute;
+    padding: 3.5rem 0;
+    margin-left: 1.5rem;
+    font-size: 3rem;
+    color: #414141;
+}
+
+.fwpj-t span:nth-child(2)::after {
+    position: absolute;
+    margin-left: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    background: url("../images/jt.png") no-repeat;
+    content: ' ';
+}
+
+.fwpj-t span:nth-child(3) {
+    float: right;
+    font-size: 2.5rem;
+    padding: 3.75rem 0;
+    color: #a7a7a7;
+}
+.fwpj-star{
+    display: block;height: 12rem;padding: 0 3rem;
+}
+.xjpj_sp1{
+    font-size: 3rem;line-height: 10rem;color: #686868;float: left;
+}
+.xjpj_sp2{
+    float: right;font-size: 4.5rem;color: #369ef5;line-height: 12rem;
+}
+.xjpj_sp3{
+    font-size: 2.5rem;color: #369ef5
+}
+.xjpf{
+    float: left;
+    position: relative;
+    margin: 4rem 3rem;
+}
+
+.xjpf i{
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+    background: url(../images/wp.png) no-repeat; /* 64x64的灰色星星图标 */
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+}
+.xjpf i.onsel {
+    background: url(../images/hp.png) no-repeat; /* 64x64的黄色星星图标 */
+
+}
+.pj_txt{
+    padding: 0 3rem;
+}
+.pj_txt textarea{
+    width: 59.5rem;
+    resize: none;
+    font-size: 3rem;
+    border: 2px solid #e5e5e5;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    color: #a7a7a7;
+    line-height: 5rem;
+    padding: 2.5rem 1rem;
+
+}
